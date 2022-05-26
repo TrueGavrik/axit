@@ -89,6 +89,7 @@ h6 {
 /*--------------------*/
 body {
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .wrapper {
@@ -104,7 +105,7 @@ body {
 
 .top {
     height: 70px;
-    background-color: #000000;
+   background-color: #000000;
 
     // .top__row
 
@@ -180,7 +181,7 @@ body {
 
 .start {
     background-color: #9a9a9a;
-    background: url("../img/background/06730009.JPG") 0 0 / cover no-repeat;
+    background: url("../img/background/06730009.JPG") 18% 0 / cover no-repeat;
     padding-top: 110px;
 
     // .start__row
@@ -193,7 +194,7 @@ body {
     // .start__body
 
     &__body {
-        width: 570px;
+    max-width: 570px;
     }
 
     // .start__form
@@ -359,7 +360,9 @@ body {
 
     // .media__icons
 
-    &__icons {}
+    &__icons img {
+        width: 100% ;
+    }
 }
 
 .tab {
@@ -662,4 +665,83 @@ body {
 
 .head__1 {
     margin-top: 30px;
+}   
+
+
+@media (max-width: 770px) {
+top{
+    max-width: 700px;
 }
+    .media__row{
+    display: block;
+    text-align: center  ;
+    }
+    .media__body{
+        display: none;
+    }
+    .start__row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .start__form{
+    margin-bottom: 50px;   
+    }
+
+    .tab__bodyt{
+        padding: 0 20px;
+    }
+    .tab{
+        padding: 35px;
+    }
+    .tab__img{
+        display: none;
+    }
+    .sub__row{
+        display: block;
+        background: url(../img/nav/4/06730025.JPG) 25% 0 repeat fixed;
+    }
+    .sub__list{
+        padding: 30px 10px 0 10px ;
+        h2{
+            color: #e9e7e7;
+        }
+        p{
+            color: #b0afaf;
+        }
+    }
+
+    .sub__img{
+        display: none;
+    }
+    .list__3{
+        padding: 20px 0 20px 0;
+    }
+
+    .standart__row{
+        padding:  0 10px 0 10px;
+        display: block;
+        img{
+            margin-top: 50px ;
+        }
+    }
+    .standart__img{
+        img{
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    .standart__text{
+        width: auto;
+        padding-bottom: 40px;
+    }
+
+    .top__bttns{
+        
+    }
+
+}
+
+
+
